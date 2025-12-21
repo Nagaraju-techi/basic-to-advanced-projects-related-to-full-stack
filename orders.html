@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Track Orders</title>
+  <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">FreshHarvest</div>
+  <nav>
+    <a href="./index.html">Home</a>
+    <a href="./productbilling.html">Billing</a>
+  </nav>
+</header>
+
+<main class="billing-container">
+  <h2>Track Your Order</h2>
+
+  <input type="text" id="orderId" placeholder="Enter Order ID (e.g. FH123)">
+  <button onclick="trackOrder()">Track</button>
+
+  <div id="orderResult"></div>
+</main>
+
+<script src="./assets/js/orders.js"></script>
+</body>
+</html>
