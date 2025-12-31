@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">FreshHarvest</div>
+  <nav>
+    <a href="./index.html">Home</a>
+    <a href="./productbilling.html">Billing</a>
+  </nav>
+</header>
+
+<main class="billing-container">
+  <h2>Contact Us / Raise a Query</h2>
+
+  <form id="queryForm" class="contact-form">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+
+    <select id="type" required>
+      <option value="">Select Query Type</option>
+      <option>Order Issue</option>
+      <option>Payment Issue</option>
+      <option>Product Quality</option>
+      <option>Delivery Delay</option>
+      <option>Other</option>
+    </select>
+
+    <textarea id="message" placeholder="Describe your issue..." required></textarea>
+
+    <button type="submit">Submit Query</button>
+  </form>
+
+  <p id="successMsg"></p>
+</main>
+
+<script src="./assets/js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login | EventBooker</title>
+  <link rel="stylesheet" href="./assets/login.css" />
+</head>
+<body>
+
+<div class="auth-container">
+  <h1>🎟 EventBooker</h1>
+  <p>Login to your account</p>
+
+  <form onsubmit="event.preventDefault(); loginUser();">
+    <input 
+      type="email" 
+      id="login-email" 
+      placeholder="Email address" 
+      required 
+    />
+
+    <input 
+      type="password" 
+      id="login-password" 
+      placeholder="Password" 
+      required 
+    />
+
+    <button type="submit">Login</button>
+  </form>
+
+  <span>
+    Don’t have an account?
+    <a href="signup.html">Sign up</a>
+  </span>
+</div>
+
+<!-- Firebase Auth -->
+<script type="module" src="./assets/auth.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>EventBooker</title>
+    <link rel="stylesheet" href="./assets/index.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"> EventBooker</div>
+        <nav>
+            <a class="active" href="#">Browse Events</a>
+            <a href="mybookings.html">My Bookings</a>
+            <span class="user">Gande Nagaraju</span>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Upcoming Events</h1>
+        <p>Discover and book tickets for amazing events</p>
+        <div class="filters">
+            <input type="text" placeholder="Search events..." />
+            <select id="categoryFilter" onchange="filterEvents()">
+                <option value="All">All Categories</option>
+                <option value="Music">Music</option>
+                <option value="Technology">Technology</option>
+                <option value="Art">Art</option>
+                <option value="Business">Business</option>
+                <option value="Sports">Sports</option>
+            </select>
+
+        </div>
+    </section>
+
+    <section class="events" id="events-container">
+        <!-- Events will be injected by index.js -->
+    </section>
+
+
+    <footer>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <h2>🎟 EventBooker</h2>
+                    <p>Secure and easy online event ticket booking platform.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Browse Events</a>
+                    <a href="mybookings.html">My Bookings</a>
+                    <a href="login.html">Login</a>
+                    <a href="signup.html">Sign Up</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Categories</h4>
+                    <a href="#">Music</a>
+                    <a href="#">Technology</a>
+                    <a href="#">Sports</a>
+                    <a href="#">Food & Art</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Email: support@eventbooker.com</p>
+                    <p>Phone: +91 98765 43210</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2024 EventBooker. All rights reserved.
+            </div>
+        </footer>
+</body>
+<script src="./assets/index.js"></script>
+
+</html>
