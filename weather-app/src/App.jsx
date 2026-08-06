@@ -8,7 +8,7 @@ function App() {
   const [error, setError] = useState("");
 
   // Replace with your actual OpenWeather API key
-  const API_KEY = "ebc8cf0e5052a48b728f6ee04d2d4520";
+  const API_KEY = "";
 
   const fetchWeather = async (e) => {
     e.preventDefault();
